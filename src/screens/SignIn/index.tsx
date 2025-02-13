@@ -41,7 +41,11 @@ export function SignIn() {
 
       <Slogan>Gestão de uso de veiculos</Slogan>
 
-      <Button title="Entrar com o google" isLoading={isLoadingAuthenticate} />
+      <Button
+        onPress={handleSignIn}
+        title="Entrar com o google"
+        isLoading={isLoadingAuthenticate}
+      />
     </Container>
   );
 }
